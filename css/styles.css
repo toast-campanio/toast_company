@@ -268,6 +268,9 @@ header img{
   background: #c13584;
   color: white;
 }
+.nakami a{
+  text-decoration: none;
+}
 /* footer */
 footer img{
   padding-top: 2px;
