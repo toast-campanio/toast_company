@@ -130,7 +130,7 @@
                 みてくれてありがとう！</h1>
                   <p><span class="Twitter">Twitter</span>は
                     <a href="https://twitter.com/CampagneToast"  target="_blank" alt="Twitterリンク">こちら</a></p>
-                <p><span class="Instagram">Instagram</span>は<a href="https://www.instagram.com/chama_70f/?hl=ja" target="_blank"  alt="Instagramリンク">こちら</a></p>
+
               </div>
 
           </div>
@@ -166,27 +166,13 @@
     function(){
       $(this).css("background-color","")
     });
-    
-    $('#pan1').hover(function(){
-		$(this).attr('src', $(this).attr('src').replace('_off', '_on'));
-			}, function(){
-				if (!$(this).hasClass('currentPage')) {
-				$(this).attr('src', $(this).attr('src').replace('_on', '_off'));
-		}
-    });
-    $('#pan2').hover(function(){
-		$(this).attr('src', $(this).attr('src').replace('_off', '_on'));
-			}, function(){
-				if (!$(this).hasClass('currentPage')) {
-				$(this).attr('src', $(this).attr('src').replace('_on', '_off'));
-		}
-    });
-    $('#pan3').hover(function(){
-		$(this).attr('src', $(this).attr('src').replace('_off', '_on'));
-			}, function(){
-				if (!$(this).hasClass('currentPage')) {
-				$(this).attr('src', $(this).attr('src').replace('_on', '_off'));
-		}
+
+    $('.child > img').hover(function(){
+      $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+      }, function(){
+      if (!$(this).hasClass('currentPage')) {
+      $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+      }
     });
     $('.top').hide().fadeIn(1000);
     });
@@ -194,3 +180,4 @@
   </script>
   </body>
 </html>
+
